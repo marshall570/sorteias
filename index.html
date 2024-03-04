@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EH O SORTEIAS | Sorteador de grupos de trabalho</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>EH O SORTEIAS</h1>
+
+    <header>
+      <div class="labeled-input">
+        <label for="">LISTA DE ALUNOS</label>
+        <input type="file" onchange="loadAlunos(this.files[0])" />
+      </div>
+
+      <div class="labeled-input">
+        <label for="">LISTA DE TEMAS</label>
+        <input type="file" onchange="loadTemas(this.files[0])" />
+      </div>
+
+      <button onclick="handleSorteio()">SORTEAR</button>
+    </header>
+    <h1 style="text-decoration: underline;">RESULTADOS</h1>
+    <div class="sorteio"></div>
+  </body>
+</html>
